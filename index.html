@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lucas Gerbeaux</title>
+<meta name="description" content="Senior product/backend engineer building APIs, data-intensive systems, and reliable software around AI.">
+<style>
+  :root {
+    --bg: #fafaf9;
+    --fg: #1c1917;
+    --muted: #6b645d;
+    --line: #e7e5e4;
+    --accent: #2563eb;
+    --chip: #f0efed;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111110;
+      --fg: #ecebe9;
+      --muted: #a29c94;
+      --line: #292725;
+      --accent: #7aa2ff;
+      --chip: #1e1d1b;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 64px 20px 80px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  header h1 { font-size: 2.6rem; line-height: 1.1; margin: 0 0 8px; letter-spacing: -0.02em; }
+  .tagline { font-size: 1.2rem; color: var(--muted); margin: 0 0 20px; }
+  .links { display: flex; gap: 20px; flex-wrap: wrap; margin: 0; padding: 0; list-style: none; }
+  .links a { font-weight: 500; }
+
+  section { margin-top: 56px; }
+  h2 {
+    font-size: .8rem; text-transform: uppercase; letter-spacing: .12em;
+    color: var(--muted); margin: 0 0 20px; padding-bottom: 8px;
+    border-bottom: 1px solid var(--line);
+  }
+  p { margin: 0 0 1em; }
+
+  .job { margin-bottom: 32px; }
+  .job-head { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; align-items: baseline; }
+  .job h3 { margin: 0; font-size: 1.1rem; }
+  .job h3 span { font-weight: 400; color: var(--muted); }
+  .dates { color: var(--muted); font-size: .9rem; white-space: nowrap; }
+  .blurb { color: var(--muted); margin: 2px 0 8px; font-size: .95rem; }
+  .job ul { margin: 0; padding-left: 1.2em; }
+  .job li { margin-bottom: 6px; }
+
+  .skills { display: grid; grid-template-columns: max-content 1fr; gap: 10px 24px; margin: 0; }
+  .skills dt { font-weight: 600; }
+  .skills dd { margin: 0; color: var(--muted); }
+
+  .edu { margin: 0 0 12px; }
+  .edu small { color: var(--muted); display: block; }
+
+  footer { margin-top: 64px; color: var(--muted); font-size: .85rem; }
+
+  @media (max-width: 520px) {
+    main { padding-top: 40px; }
+    header h1 { font-size: 2.1rem; }
+    .skills { grid-template-columns: 1fr; gap: 2px; }
+    .skills dd { margin-bottom: 10px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Lucas Gerbeaux</h1>
+    <p class="tagline">Senior product/backend engineer. Greater Seattle Area.</p>
+    <ul class="links">
+      <li><a href="mailto:lucas.gerbeaux@gmail.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/lucasgerbeaux">LinkedIn</a></li>
+    </ul>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p>I've spent 10+ years building and operating production systems, specializing in APIs, data-intensive applications, distributed workflows, and third-party integrations.</p>
+    <p>I like taking ambiguous problems from zero to production, and lately that includes building reliable systems around emerging AI capabilities.</p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+
+    <div class="job">
+      <div class="job-head">
+        <h3>Founding Software Engineer <span>· Taxwire</span></h3>
+        <span class="dates">Jan 2025 – Present</span>
+      </div>
+      <p class="blurb">Global sales tax compliance platform</p>
+      <ul>
+        <li>Designed and built the core tax API from scratch, enabling direct integrations and white-labeling of the tax engine. Owned architecture, production scaling, load testing, monitoring, and reliability.</li>
+        <li>Led the data ingestion and sync platform: millions of records per month across 10+ systems including Stripe and QuickBooks Online, with reconciliation, adaptive rate limiting, backfills, and durable workflows on Temporal and S3.</li>
+        <li>Built MCP tooling that lets non-technical users explore and work with customer data through an AI-native interface.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <h3>Senior Software Engineer <span>· Zitara</span></h3>
+        <span class="dates">Nov 2022 – Dec 2024</span>
+      </div>
+      <p class="blurb">Software to measure, model and predict battery cell behavior</p>
+      <ul>
+        <li>Architected logging and tracing that cut MTTR from days to hours.</li>
+        <li>Built data pipelines from raw battery lab data to customer-facing visualizations, shrinking time to value from 4+ months to about a week.</li>
+        <li>Led an observability initiative, from anomaly detection to pipeline health, with a large drop in data quality tickets.</li>
+        <li>Refactored tech debt with zero downtime: faster development and 20% fewer bug tickets.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <h3>Senior Software Engineer <span>· Carbon 3D</span></h3>
+        <span class="dates">Oct 2019 – Nov 2022</span>
+      </div>
+      <p class="blurb">Software for advanced resin 3D printing manufacturing hardware</p>
+      <ul>
+        <li>Led the entitlement service for software subscriptions, giving the business far more pricing flexibility.</li>
+        <li>Migrated a JSON API to Protobuf to enable a gRPC microservice architecture.</li>
+        <li>Built the manufacturing API (Rails, Node, TypeScript) for high-scale 3D printing factory integration.</li>
+        <li>Led a Prometheus/Grafana monitoring overhaul that let the business advertise 99.99 guarantees.</li>
+        <li>Implemented ElasticSearch search, cutting latency by over 2x.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <h3>Senior Software Engineer <span>· Hollar</span></h3>
+        <span class="dates">Feb 2016 – Oct 2019</span>
+      </div>
+      <p class="blurb">The first deep-discount online marketplace (acquired by Five Below)</p>
+      <ul>
+        <li>Developed the main e-commerce platform in Ruby/Rails, enabling customized marketing and merchandising.</li>
+        <li>Built the marketplace in Elixir/Phoenix, onboarding several 3rd-party merchants and ingesting 200k+ products.</li>
+        <li>Built search with ES/Algolia, improving load times and personalization.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <h3>Software Engineer <span>· mGage</span></h3>
+        <span class="dates">Nov 2013 – Feb 2016</span>
+      </div>
+      <p class="blurb">Large-throughput SMS/MMS marketing (acquired by Kaleyra)</p>
+      <ul>
+        <li>Built the messaging and media transcoding platform (Ruby, MySQL, Memcached, RabbitMQ) behind large campaigns, including Super Bowl ads.</li>
+        <li>Added Passbook / Google Wallet integration for gift cards, tickets and vouchers, multiplying conversion over 3x.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <dl class="skills">
+      <dt>Languages</dt><dd>Python, TypeScript, Ruby</dd>
+      <dt>Backend</dt><dd>APIs, distributed systems, async workflows, data pipelines, PostgreSQL</dd>
+      <dt>AI</dt><dd>LLM applications, MCP, agentic workflows</dd>
+      <dt>Infrastructure</dt><dd>AWS, Docker, Terraform, observability</dd>
+      <dt>Systems</dt><dd>Temporal, Redis, Elasticsearch</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p class="edu"><strong>UTBM</strong><small>Master's Degree, Computer Software Engineering</small></p>
+    <p class="edu"><strong>Université Laval</strong><small>M.Sc., Computer Software Engineering</small></p>
+    <p class="edu"><strong>Université de Bourgogne</strong><small>Associate's degree, Communication and Media Studies</small></p>
+    <p class="edu"><strong>Languages</strong><small>English and French (native)</small></p>
+  </section>
+
+  <footer>© 2026 Lucas Gerbeaux</footer>
+</main>
+</body>
+</html>
